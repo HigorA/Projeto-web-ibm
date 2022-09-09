@@ -1,0 +1,21 @@
+import PerguntaResposta from "../components/PerguntaResposta";
+
+export default function FAQ() {
+
+    const teste = [{'pergunta':'Q. Como faço o cadastro na plataforma?','resposta':'R. Para acessar a plataforma basta fazer o cadastro indicado na pégina "Cadastro", seja como candidato ou recrutador. '},
+                    {'pergunta':'Q. Como vejo o acompanhamento da inscrição?', 'resposta':'R. Após se candidatar a vaga e, se requisitado, fazer os testes necessários, você será direcionado à uma linha de etapas desta.No seu perfil há uma opção "candidaturas" que mostrará o acompanhamento de cada vaga.'},
+                    {'pergunta':'Q. Tenho 16 anos, posso me candidatar?', 'resposta':'R. A idade mínima para cadastro e candidatura, segunda as leis trabalhistas, é 16 anos.'},
+                    {'pergunta':'Q. Consigo avaliar a empresa se passar no processo seletivo?', 'resposta':'R. Sim. Após passar por todas as etapas do processo de admissão e ser aprovado(a) para a vaga, o candidato poderá deixar um feedback sobre como foi o processo de recrutamento da empresa na qual está trabalhando.'},
+                    {'pergunta':'Q. Fui aprovado em um processo seletivo, posso cancelar minha candidatura em outros?','resposta':'R. Não. Após enviada a inscrição, não há como desfazer, apenas esperar pela resposta e, caso avance para a próxima etapa, informe o recrutador sobre isso.'},
+                    {'pergunta':'Q. Há um prazo mínimo para a resposta das candidaturas?','resposta':'R. Os responsáveis pelas respostas e feedbacks são os recrutadores que foram destinados ao processo de recrutamento, por este motivo não podemos estabelecer um prazo para o tempo de espera da resposta.'}
+                ]
+
+    return (
+        <section>
+
+            <h1 class="titulo-main">Perguntas Frequentes</h1>
+            
+            <PerguntaResposta teste={teste}/>
+        </section>
+    )
+}
