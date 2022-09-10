@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router-dom'
 import { Head, LoginDiv, Logo } from '../style/styled'
-import log1 from './../img/desenho.png'
+import logo from './../img/logo.png'
 import Menu from "./Menu"
 
-export default function Header() {
+export default function Header(props) {
+
     return(
         <Head>
-            <Logo src={log1} alt="" />
-            <Menu/>
+            <Logo src={logo} alt="" />
+            <Menu pagina={props.paginas} painel={props.paginasPainel}/>
             <LoginDiv>
                 <NavLink to='/Cadastro'>Cadastre-se</NavLink>
                 <NavLink to='/Login'>Login</NavLink>

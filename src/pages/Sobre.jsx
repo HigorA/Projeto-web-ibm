@@ -29,8 +29,8 @@ export default function Sobre() {
                 <img src={empresa} alt="" class="candidatoEempresa"/>
                 <h3 class="titulo-vantagem">Para a Empresa</h3>
                 <p class="p-vantagem">Filtragem por skills;</p>
-                <p class="p-vantagem">Processos de seleção mais ágeis e rápido;</p>
-                <p class="p-vantagem">Alertas profissionais de acordo com a vaga;</p>
+                <p class="p-vantagem">Processos de seleção mais ágeis e rápido.</p>
+                <p class="p-vantagem">Alertas profissionais de acordo com a vaga.</p>
                 <p class="p-vantagem">Maior visibilidade para empresa através do "Ranking".</p>
             </DivVantagem>
         </SectionSobre>

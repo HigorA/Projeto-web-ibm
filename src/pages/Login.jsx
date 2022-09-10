@@ -16,7 +16,8 @@ export default function Login() {
                     <label htmlFor="">Senha</label>
                     <input type="password" name="" id="" placeholder="senha"/>
                 </form>
-                <Link to='../'><button>Entrar</button></Link>
+                <Link to='/PainelCandidato'><button>Candidato</button></Link>
+                <Link to='/PainelRecrutador'><button>Recrutador</button></Link>
             </DivForm>
             <p>Não possui login ainda? <Link to='../Cadastro'>Cadastre-se aqui</Link></p>
         </SectionLogin>
