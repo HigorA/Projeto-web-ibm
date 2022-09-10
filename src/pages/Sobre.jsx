@@ -1,11 +1,19 @@
-import { DivVantagem, SectionSobre } from "../style/styled";
-import seta from './../img/seta.png'
+import { DivSobre, DivVantagem, SectionSobre } from "../style/styled";
 import candidato from './../img/candidato.png'
 import empresa from './../img/empresapng.png'
 
 export default function Sobre() {
     return (
-        <SectionSobre id="vantagens">
+        <SectionSobre>
+
+            <DivSobre>
+                <h1>Sobre</h1>
+                <p>A plataforma Nextidea surgiu com o propósito de aprimorar a experiência de busca e contratação para empregos, tanto para candidatos quanto recrutadores.</p>
+                <p>Assim, surgimos no ano de 2022, como uma forma de solução para o desafio proposto pela IBM, que consistia nesta mesma ideia de aprimoramento na relação de busca por empregos e empregados.</p>
+            </DivSobre>
+
+
+
             <h1 class="titulo-main">Vantagens</h1>
         
             <DivVantagem class="vantagens vant">

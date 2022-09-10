@@ -18,7 +18,7 @@ export default function Vagas() {
     
     return(
         <SectionVagas>
-            <h2>Vagas</h2>
+            <h1>Vagas</h1>
             <Vaga vagas={vagas}/>
         </SectionVagas>
     )
