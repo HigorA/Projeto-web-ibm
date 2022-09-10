@@ -316,3 +316,74 @@ export const DivForm = styled.div `
         background-color: #006a5d;
     }
 `
+
+export const SectionCadastro = styled.section `
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to right, rgba(47, 239, 216, 1.0), rgba(28, 97, 226, 1.0));
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+    }
+
+    form {
+        width: 80%;
+        padding: 40px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    form .upload-imagem {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    form .upload {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 128px;
+        height: 128px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 50%;
+        padding-left: 0%;
+    }
+
+    form input[type='file'] {
+        display: none;
+        margin: 0;
+    }
+
+    form label {
+        font-weight: bold;
+        width: 85%;
+        color: #fff;
+    }
+
+    form label, input {
+        display: block;
+    }
+
+    form input {
+        width: 90%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+    }
+`

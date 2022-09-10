@@ -1,9 +1,14 @@
+import { SectionCadastro } from "../style/styled";
+import camera from '.././img/camera1.png'
 export default function Cadastro() {
     return(
-        <section>
+        <SectionCadastro>
             <h1>Cadastro</h1>
             <form action="">
-                <input type="file" name="" id="" />
+                <div className="upload-imagem">
+                    <label htmlFor="image" className="upload"><img src={camera} alt="" /></label>
+                    <input type="file" name="image" id="image" />
+                </div>
 
                 <label htmlFor="">Nome</label>
                 <input type="text" name="" id="" />
@@ -23,10 +28,10 @@ export default function Cadastro() {
                 <label htmlFor="">Data de Nascimento</label>
                 <input type="date" name="" id="" />
 
-                <input type="submit" value="Cadastrar" />
-                <input type="reset" value="Limpar" />
+                <input type="submit" value="Cadastrar" className="botao"/>
+                <input type="reset" value="Limpar" className="botao"/>
             </form>
-        </section>
+        </SectionCadastro>
 
     )
 }
