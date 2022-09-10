@@ -1,11 +1,25 @@
 import Vaga from "../components/Vaga";
+import { SectionVagas } from "../style/styled";
 
 export default function Vagas() {
 
+    const vagas = [{'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'},
+    {'titulo':'Estágio', 'empresa':'FIAP', 'local':'Paulista'}]
+
+    
     return(
-        <section style={{backgroundColor: "yellow"}}>
+        <SectionVagas>
             <h2>Vagas</h2>
-            <Vaga  titulo='Estágio' desc='Conhecimentos basicos em HTML, CSS e Js' modalidade='hibrido' salario='Á combinar'/>
-        </section>
+            <Vaga vagas={vagas}/>
+        </SectionVagas>
     )
 }

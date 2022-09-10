@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom"
+
+import { NavLink } from "react-router-dom"
+import { Nav } from "../style/styled"
 
 export default function Menu() {
+    
+
     return (
-        <nav>
+        <Nav>
             <ul>
-                <div className='menu-principal' style={{backgroundColor : "green"}}>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='Vagas'>Vagas</Link></li>
-                    <li><Link to='Sobre'>Sobre</Link></li>
-                    <li><Link to='FAQ'>FAQ</Link></li>
-                </div>
-                <li><Link to='Login'>Login</Link></li>                      
-                <li><Link to='Cadastro'>Cadastro</Link></li>
+                <li><NavLink to='/'>Home</NavLink></li>
+                <li><NavLink to='/Vagas'>Vagas</NavLink></li>
+                <li><NavLink to='/Sobre'>Sobre</NavLink></li>
+                <li><NavLink to='/FAQ'>FAQ</NavLink></li>
             </ul>
-        </nav>
+        </Nav>
     )
 }

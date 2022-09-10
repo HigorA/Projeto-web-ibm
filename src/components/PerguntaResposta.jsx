@@ -1,12 +1,12 @@
-import {Pergunta, Resposta} from './../style/styled'
+import {DivPerguntaResposta, Pergunta, Resposta, SpanPergunta, SpanResposta} from './../style/styled'
 export default function PerguntaResposta(props) {
     
    
    return (
     
-        <section>
-            {props.teste.map((item)=><><Pergunta>{item.pergunta}</Pergunta> <Resposta>{item.resposta}</Resposta></>)}
-        </section> 
+        <>
+            {props.teste.map((item)=><DivPerguntaResposta><Pergunta><SpanPergunta>{item.tipo}</SpanPergunta>{item.pergunta}</Pergunta> <Resposta><SpanResposta>{item.tipoR}</SpanResposta>{item.resposta}</Resposta></DivPerguntaResposta>)}
+        </> 
         
     )
 }

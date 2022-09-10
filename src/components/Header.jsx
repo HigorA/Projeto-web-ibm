@@ -1,11 +1,17 @@
-import logo from "../img/nextideia.png"
+import { NavLink } from 'react-router-dom'
+import { Head, LoginDiv, Logo } from '../style/styled'
+import log1 from './../img/desenho.png'
 import Menu from "./Menu"
 
 export default function Header() {
     return(
-        <header>
-            <img src={logo} alt="" />
+        <Head>
+            <Logo src={log1} alt="" />
             <Menu/>
-        </header>
+            <LoginDiv>
+                <NavLink to='/Cadastro'>Cadastre-se</NavLink>
+                <NavLink to='/Login'>Login</NavLink>
+            </LoginDiv>
+        </Head>
     )
 }

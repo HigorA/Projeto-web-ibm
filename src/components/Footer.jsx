@@ -1,8 +1,9 @@
+import { Foot } from "../style/styled";
+
 export default function Footer() {
     return (
-        <footer>
+        <Foot>
             <p>&copy; Copyrights</p>
-            
-        </footer>
+        </Foot>
     )
 }
